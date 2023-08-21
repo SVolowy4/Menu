@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
    max-width: 1400px;
    margin: 0 auto;
@@ -38,3 +39,45 @@ p {
 }
 
 
+=======
+body {
+   max-width: 1400px;
+   margin: 0 auto;
+   background-color: rgb(165, 77, 42);
+}
+
+.container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+p {
+   font-family: 'Caveat', cursive;
+   font-size: 1.5rem;
+   text-align: center;
+   font-weight: 900;
+}
+
+.card img {
+   border-radius: 50%;
+}
+
+.card img:hover {
+   width: 110%;
+}
+
+@media (max-width: 414px ) {
+   .container {
+      flex-direction: column;
+   }
+   .card {
+      width: 300px;
+   }
+   .card img {
+      width: 100%;
+   }
+}
+
+
+>>>>>>> 258c8f5 (*)
