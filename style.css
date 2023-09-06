@@ -30,11 +30,12 @@ p {
    .container {
       flex-direction: column;
    }
-   .card {
-      width: 300px;
-   }
    .card img {
       width: 100%;
+   }
+   p {
+      background-color: grey;
+      border-radius: 50%;
    }
 }
 

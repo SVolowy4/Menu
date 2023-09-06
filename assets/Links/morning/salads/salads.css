@@ -1,0 +1,35 @@
+* {
+   text-decoration: none;
+}
+
+body {
+   background-color: rgba(193, 75, 7, 0.74);
+   font-family: 'Caveat', cursive;
+}
+
+h2 {
+   color: black;
+   font-size: 2rem;
+}
+
+.main {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.group img:hover {
+   width: 310px;
+   transition: 0.5s;
+}
+
+.group {
+   width: 300px;
+   text-align: center;
+}
+
+.group img {
+   width: 100%;
+   border-radius: 50%;
+}
+
