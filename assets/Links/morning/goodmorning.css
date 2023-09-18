@@ -3,13 +3,14 @@
 }
 
 body {
-   background-color: rgba(193, 75, 7, 0.74);
+   background-color: rgba(216, 131, 81, 0.74);
    font-family: 'Caveat', cursive;
 }
 
 h2 {
    color: black;
    font-size: 2rem;
+   margin-bottom: 0px;
 }
 
 .main {
