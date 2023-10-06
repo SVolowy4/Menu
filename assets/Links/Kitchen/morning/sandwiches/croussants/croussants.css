@@ -3,6 +3,8 @@
 }
 
 body {
+   max-width: 414px;
+   margin: 0 auto;
    background-color: rgba(193, 75, 7, 0.74);
    font-family: 'Caveat', cursive;
 }
@@ -19,13 +21,9 @@ h2 {
    flex-wrap: wrap;
 }
 
-.group img:hover {
-   width: 310px;
-   transition: 0.5s;
-}
 
 .group {
-   width: 300px;
+   width: 150px;
    text-align: center;
 }
 

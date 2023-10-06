@@ -33,3 +33,15 @@ p {
    width: 100%;
    border-radius: 50%;
 }
+
+.button {
+   display: flex;
+   align-items: center;
+}
+
+.button__arrow {
+   width: 10%;
+}
+.button__arrow img {
+   width: 100%;
+}

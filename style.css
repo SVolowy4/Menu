@@ -11,21 +11,22 @@ a {
 }
 
 p {
+   margin: 0;
    font-family: Caveat;
    font-weight: 800;
    font-size: 1.5rem;
 }
 
 .main__container {
-   padding: 30px;
+   padding: 150px 0 0 0;
    display: flex;
    flex-wrap: wrap;
-   gap: 20px;
+   gap: 50px;
    justify-content: space-around;
 }
 
 .card__container {
-   width: 150px;
+   width: 125px;
    display: flex;
    flex-direction: column;
    align-items: center;

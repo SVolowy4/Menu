@@ -1,35 +1,38 @@
-* {
+a {
    text-decoration: none;
+   color: black;
 }
 
 body {
+   max-width: 414px;
+   margin: 0 auto;
    background-color: rgba(216, 131, 81, 0.74);
    font-family: 'Caveat', cursive;
 }
 
 h2 {
    color: black;
-   font-size: 2rem;
+   font-size: 1.5rem;
    margin-bottom: 0px;
 }
 
 .main {
+   padding: 30px;
    display: flex;
+   align-items: center;
+   flex-wrap: wrap;
    justify-content: space-around;
 }
 
-.group img:hover {
-   width: 250px;
-   transition: 0.5s;
-}
-
 .group {
-   width: 200px;
-   text-align: center;
+   width: 125px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .group img {
-   width: 200px;
+   width: 100%;
    border-radius: 50%;
 }
 
@@ -60,14 +63,25 @@ hr {
    width: 100%;
    border-radius: 50%;
 }
+.main-down {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
 
-@media (max-width: 414px ) {
-   .main {
-      flex-direction: column;
-      align-items: center;
-   }
-   .other {
-      display: flex;
-      flex-direction: column;
-   }
+.button {
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.button__arrow {
+   width: 10%;
+}
+.button__arrow img {
+   width: 100%;
+}
+.button__name {
+   font-size: 2em;
 }
