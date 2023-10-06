@@ -19,13 +19,11 @@ p {
 .main__container {
    padding: 30px;
    display: flex;
-   flex-wrap: wrap;
-   gap: 20px;
-   justify-content: space-around;
+   flex-direction: column;
+   align-items: center;
 }
 
 .card__container {
-   width: 150px;
    display: flex;
    flex-direction: column;
    align-items: center;
