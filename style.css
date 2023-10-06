@@ -1,38 +1,75 @@
 
 body {
-   max-width: 1400px;
+   max-width: 414px;
    margin: 0 auto;
-   background-color: rgb(223, 164, 140);
+   background-color: rgb(255, 213, 150);
 }
 
-.container {
+.title {
+   font-family: Caveat;
+   font-size: 1.5rem;
+ }
+ .sub-title {
+   font-family: Caveat;
+ }
+ a {
+   text-decoration: none;
+   color: black;
+ }
+
+/*---------------------Up------------------------*/
+
+.container__up {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
+   margin: 100px 20px 20px 20px;
+}
+ .card {
+   width: 200px;
+   display: flex;
+   flex-direction: column;
    align-items: center;
-}
-
-p {
-   margin-bottom: 0px;
-   font-family: 'Caveat', cursive;
-   font-size: 2.5rem;
-   text-align: center;
-   font-weight: 900;
-}
-
-.card img {
+ }
+ .card img {
+   width: 100%;
    border-radius: 50%;
+ }
+ .menu-kitchen {
+   padding-right: 50px;
+ }
+
+ /*----------------Down---------------------*/
+
+.container__down {
+   display: flex;
+   margin: 100px 20px 20px 20px;
+   justify-content: space-between;
 }
 
-.card img:hover {
-   width: 110%;
+.bakery {
+   padding-right: 50px;
 }
 
-@media (max-width: 414px ) {
-   .container {
-      flex-direction: column;
-   }
-   .card img {
-      width: 100%;
-   }
+/*------------------bakery undercard-------------------------*/
+
+.container__bakery {
+   display: flex;
+   padding-left: 10px;
 }
+
+.undercard {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.croussants {
+   padding-right: 5px
+}
+.braed {
+   padding-left: 5px;
+}
+
+
 
