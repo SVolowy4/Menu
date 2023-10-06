@@ -5,71 +5,21 @@ body {
    background-color: rgb(255, 213, 150);
 }
 
-.title {
-   font-family: Caveat;
-   font-size: 1.5rem;
- }
- .sub-title {
-   font-family: Caveat;
- }
- a {
-   text-decoration: none;
-   color: black;
- }
-
-/*---------------------Up------------------------*/
-
-.container__up {
+.main__container {
+   padding: 30px;
    display: flex;
-   justify-content: space-between;
-   margin: 100px 20px 20px 20px;
+   flex-wrap: wrap;
+   gap: 50px;
 }
- .card {
-   width: 200px;
+
+.card__container {
+   width: 150px;
    display: flex;
    flex-direction: column;
    align-items: center;
- }
- .card img {
+}
+
+.card__image img {
    width: 100%;
    border-radius: 50%;
- }
- .menu-kitchen {
-   padding-right: 50px;
- }
-
- /*----------------Down---------------------*/
-
-.container__down {
-   display: flex;
-   margin: 100px 20px 20px 20px;
-   justify-content: space-between;
 }
-
-.bakery {
-   padding-right: 50px;
-}
-
-/*------------------bakery undercard-------------------------*/
-
-.container__bakery {
-   display: flex;
-   padding-left: 10px;
-}
-
-.undercard {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-between;
-}
-
-.croussants {
-   padding-right: 5px
-}
-.braed {
-   padding-left: 5px;
-}
-
-
-
