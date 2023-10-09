@@ -1,36 +1,87 @@
-* {
+a {
    text-decoration: none;
+   color: black;
 }
 
 body {
-   background-color: rgba(193, 75, 7, 0.74);
+   max-width: 414px;
+   margin: 0 auto;
+   background-color: rgba(216, 131, 81, 0.74);
    font-family: 'Caveat', cursive;
 }
 
 h2 {
    color: black;
-   font-size: 2rem;
+   font-size: 1.5rem;
+   margin-bottom: 0px;
 }
 
 .main {
+   gap: 30px;
+   padding: 30px;
    display: flex;
-   justify-content: space-around;
+   align-items: center;
    flex-wrap: wrap;
-}
-
-.group img:hover {
-   width: 310px;
-   transition: 0.5s;
+   justify-content: space-around;
 }
 
 .group {
-   width: 300px;
-   text-align: center;
+   width: 125px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .group img {
    width: 100%;
    border-radius: 50%;
+}
+
+/*------------------------------------------------------------------*/
+
+h2 {
+   text-align: center;
+}
+
+hr {
+   border: 1px solid grey;
+}
+
+.other {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+}
+
+.card {
+   width: 300px;
+}
+.card img {
+   width: 100%;
+   border-radius: 50%;
+}
+.main-down {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.button__arrow {
+   width: 10%;
+}
+.button__arrow img {
+   width: 100%;
+}
+.button__name {
+   font-size: 2em;
 }
 
 span {

@@ -1,5 +1,6 @@
 * {
    text-decoration: none;
+   color: black;
 }
 
 body {
@@ -35,4 +36,19 @@ h2 {
 
 span {
    color: red;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+}
+
+.button__arrow {
+   width: 10%;
+}
+.button__arrow img {
+   width: 100%;
+}
+.button__name {
+   font-size: 2em;
 }

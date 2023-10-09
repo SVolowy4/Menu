@@ -1,3 +1,8 @@
+* {
+   text-decoration: none;
+   color: black;
+}
+
 .border {
    border: 2px solid red;
    width: 300px;
@@ -8,3 +13,18 @@ p {
    color: red;
 }
 
+.button {
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.button__arrow {
+   width: 10%;
+}
+.button__arrow img {
+   width: 100%;
+}
+.button__name {
+   font-size: 2em;
+}
