@@ -1,16 +1,14 @@
 * {
+   font-family: Caveat;
+}
+
+body {
+   background-color:blanchedalmond;
+}
+
+a {
    text-decoration: none;
    color: black;
-}
-
-.border {
-   border: 2px solid red;
-   width: 300px;
-}
-
-p {
-   margin: 0 ;
-   color: red;
 }
 
 .button {
@@ -27,4 +25,16 @@ p {
 }
 .button__name {
    font-size: 2em;
+}
+
+li a {
+   text-decoration: underline;
+}
+
+li {
+   font-size: 1.2rem;
+}
+
+.border {
+   border: 1px solid red
 }
