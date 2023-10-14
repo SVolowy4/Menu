@@ -18,7 +18,7 @@ p {
 }
 
 .main__container {
-   padding: 150px 0 0 0;
+   padding: 50px 0 0 0;
    display: flex;
    flex-wrap: wrap;
    gap: 50px;
