@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,109 +10,336 @@
    <title>Menu Zv</title>
 </head>
 <body>
-   <div class="main__container">
-      <a href="./assets/Links/Kitchen/kitchen.html">
-         <div class="card__container">
-            <div class="card__title">
-               <p>Кухня</p>
+   <div class="main">
+      <div class="main__container">
+         <a href="./assets/Links/Kitchen/kitchen.html">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Кухня</p>
+               </div>
+               <div class="card__image">
+                  <img src="./assets/img/evening.png" alt="Kitchen image">
+               </div>
             </div>
-            <div class="card__image">
-               <img src="./assets/img/evening.png" alt="Kitchen image">
+         </a>
+         <a href="#">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Бар</p>
+               </div>
+               <div class="card__image">
+                  <img style="height: 90px; width: 120px;" src="./assets/img/bar.png" alt="Bar image">
+               </div>
             </div>
-         </div>
-      </a>
-      <a href="#">
-         <div class="card__container">
-            <div class="card__title">
-               <p>Десерти</p>
+         </a>
+         <a href="#">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Вино</p>
+               </div>
+               <div class="card__image">
+                  <img style="height: 100px; width: 120px;" src="./assets/img/wine.png" alt="Wine image">
+               </div>
             </div>
-            <div class="card__image">
-               <img src="./assets/img/morning.png" alt="">
+         </a>
+         <a href="./assets/Links/Desserts/desserts.html">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Десерти</p>
+               </div>
+               <div class="card__image">
+                  <img src="./assets/img/desserts.png" alt="Dessert image">
+               </div>
             </div>
-         </div>
-      </a>
-      <a href="#">
-         <div class="card__container">
-            <div class="card__title">
-               <p>Бар</p>
+         </a>
+         <a href="#">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Випічка...Хліб</p>
+               </div>
+               <div class="card__image">
+                  <img src="./assets/img/Bakery.png" alt="Bakery and bread image">
+               </div>
             </div>
-            <div class="card__image">
-               <img src="./assets/img/morning.png" alt="">
-            </div>
-         </div>
-      </a>
-      <a href="#">
-         <div class="card__container">
-            <div class="card__title">
-               <p>Вино</p>
-            </div>
-            <div class="card__image">
-               <img src="./assets/img/morning.png" alt="">
-            </div>
-         </div>
-      </a>
+         </a>
+      </div>
    </div>
    <hr style="margin-top: 50px;">
-         <div class="container__down">
-            <div class="down">
-               <a href="https://docs.google.com/spreadsheets/d/1fJ0iT7cFHcQX1PCXcvALtZ7UGoDsnxIkrqYMTuzIt6U/edit#gid=973373652">
-                  <div class="card__container">
-                     <div class="card__title">
-                        <p>Графік</p>
-                     </div>
-                     <div class="card__image">
-                        <img src="./assets/img/photo_2023-10-14_14-19-16.jpg" alt="">
-                     </div>
-                  </div>
-               </a>
+   <div class="main__container">
+      <a href="https://docs.google.com/spreadsheets/d/1fJ0iT7cFHcQX1PCXcvALtZ7UGoDsnxIkrqYMTuzIt6U/edit#gid=973373652">
+         <div class="card__container">
+            <div class="card__title">
+               <p>Графік</p>
+            </div>
+            <div class="card__image">
+               <img src="./assets/img/photo_2023-10-14_14-19-16.jpg" alt="Schedule image">
             </div>
          </div>
+      </a>
 </body>
 
 <!--Задачі-->
+
 <!--
-   * Додати графік на головній сторінці
-   * Соуси які повторюються переименувати для якої страви вони відносяться
-   * Додати випічку(Створити копії структури для верстки та їх стилів) 
-   * десерти 
+
+   * десерти (Торти 8, тістечка 8, цукерки)
+
+   * Додати випічку (Хліб, круасани, крафіни, кекси)
+ 
    * вино
+   
 -->
+
 <!--Інструменти-->
+
+<!--HTML шрифти-->
+
 <!--
-   /***************************Кнопка "Назад"****************************/
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+
+-->
+
+<!--Структура 2х-->
+
+<!--
+   ---HTML для 2х іконок з назвою
+
+      <div class="main__container">
+         <a href="Кнопка іконки">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Назва іконки</p>
+               </div>
+               <div class="card__image">
+                  <img src="../../img/morning.png" alt="Картинка іконки">
+               </div>
+            </div>
+         </a>
+         <a href="./evening/evening.html">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>З ОБІДУ</p>
+               </div>
+               <div class="card__image">
+                  <img src="../../img/evening.png" alt="">
+               </div>
+            </div>
+         </a>
+      </div>
    <a href="Куди назад">
       <div class="button">
          <div class="button__arrow">
-            <img src="Стрілка" alt="Назва цього елементу">
+            <img src="Стрілка" alt="Картинка стрілки">
          </div>
          <div class="button__name">
             <p>Назад</p>
          </div>
       </div>
    </a>
--->
-<!--
-   /*****************************Стиль для сторінки інгрідієнтів**********/
 
-   ---HTML
-
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
-
-   ---CSS
-
-* {
-   font-family: Caveat;
-}
-
-body {
-   background-color:blanchedalmond;
+   ---CSS для 2х іконок
+   
+   body {
+   max-width: 414px;
+   margin: 0 auto;
+   background-color: rgb(255, 213, 150);
 }
 
 a {
    text-decoration: none;
    color: black;
+}
+
+p {
+   margin: 0;
+   font-family: Caveat;
+   font-weight: 800;
+   font-size: 1.5rem;
+}
+
+   .main__container {
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card__image img {
+   width: 100%;
+   border-radius: 50%;
+}
+
+-->
+
+<!--Структура < 2x іконок-->
+
+<!--
+
+   --HTML
+
+   <div class="main">
+      <div class="main__container">
+         <a href="Куди веде кнопка">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Назва іконки</p>
+               </div>
+               <div class="card__image">
+                  <img src="./assets/img/evening.png" alt="Картинка іконки">
+               </div>
+            </div>
+         </a>
+         <a href="Куди веде кнопка">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Назва іконки</p>
+               </div>
+               <div class="card__image">
+                  <img src="./assets/img/morning.png" alt="Картинка іконки">
+               </div>
+            </div>
+         </a>
+         <a href="Куди веде кнопка">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Назва іконки</p>
+               </div>
+               <div class="card__image">
+                  <img src="./assets/img/morning.png" alt="Картинка іконки">
+               </div>
+            </div>
+         </a>
+         <a href="Куди веде кнопка">
+            <div class="card__container">
+               <div class="card__title">
+                  <p>Назва іконки</p>
+               </div>
+               <div class="card__image">
+                  <img src="./assets/img/morning.png" alt="Картинка іконки">
+               </div>
+            </div>
+         </a>
+      </div>
+   </div>
+
+      ---CSS
+
+   body {
+   max-width: 414px;
+   margin: 0 auto;
+   background-color: rgb(255, 213, 150);
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+p {
+   margin: 0;
+   font-family: Caveat;
+   font-weight: 800;
+   font-size: 1.5rem;
+}
+
+.main {
+   padding: 50px 0 0 0;
+
+}
+
+.main__container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   justify-content: space-around;
+}
+
+.card__container {
+   width: 125px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card__image img {
+   width: 100%;
+   border-radius: 50%;
+   box-shadow: 1px 5px 10px rgb(14, 12, 12);
+}
+
+.card__image {
+   border-radius: 50%;
+}
+
+
+-->
+
+<!--Структура для сторінки інгрідієнтів-->
+
+<!--
+
+   --HTML
+
+<div class="main">
+   <div class="main__container">
+      <div class="image">
+         <img src="./pistachio-cake.png" alt="Pistachio cake">
+      </div>
+      <div class="copywrite">
+         <ul>
+            <h2>Фісташковий Завертайло</h2>
+            <li>Цукор</li>
+            <li>Білок</li>
+            <li>Фісташка</li>
+            <li>Вершкове масло</li>
+            <li>Згущенка</li>
+            <li>Фісташкове <a href="./pistachio-praline.html">праліне</a></li>
+         </ul>
+         <p>Варіація Київського торта, на яку ми заслуговуємо. Ніжний крем – фісташковий, <a href="./pistachio-praline.html">праліне</a> – фісташкове, хрустка <a href="./pistachio-merenga.html">меренга</a> – з карамелізованою фісташкою, і ще купа дробленої фісташки на останок.</p>
+      </div>
+   </div>
+</div>
+
+   --CSS
+
+   * {
+   font-family: Caveat;
+}
+
+body {
+   background-color:blanchedalmond;
+   max-width: 414px;
+   margin: 0 auto;
+}
+.image img{
+   width: 100%;
+   box-shadow: 1px 10px 10px black;
+}
+.copywrite {
+   margin-top: -60px;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+   text-decoration: underline;
+}
+
+li {
+   font-size: 1.2rem;
+}
+
+p {
+   font-size: 1.1rem;
 }
 
 .button {
@@ -132,12 +358,42 @@ a {
    font-size: 2em;
 }
 
-li a {
-   text-decoration: underline;
+
+-->
+
+<!--Кнопка "Назад"-->
+
+<!--
+   /***************************Кнопка "Назад"****************************/
+
+   ---HTML
+
+   <a href="Куди назад">
+      <div class="button">
+         <div class="button__arrow">
+            <img src="Стрілка" alt="Назва цього елементу">
+         </div>
+         <div class="button__name">
+            <p>Назад</p>
+         </div>
+      </div>
+   </a>
+
+   ---CSS
+
+.button {
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
 }
 
-li {
-   font-size: 1.2rem;
+.button__arrow {
+   width: 10%;
 }
-
+.button__arrow img {
+   width: 100%;
+}
+.button__name {
+   font-size: 2em;
+}
 -->
