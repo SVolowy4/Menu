@@ -1,43 +1,29 @@
-* {
-   font-family: Caveat;
-}
-
 body {
    background-color:blanchedalmond;
    max-width: 414px;
    margin: 0 auto;
-}
-.image img{
-   width: 100%;
-   box-shadow: 1px 10px 10px black;
-}
-.copywrite {
-   margin-top: -80px;
-   padding: 20px;
-}
-
-.copywrite-box {
-   display: flex;
+   font-family: Caveat;
 }
 
 a {
    text-decoration: none;
    color: black;
-   text-decoration: underline;
 }
 
-li {
-   font-size: 1.2rem;
+.main {
+   padding: 20px;
 }
 
-p {
-   font-size: 1.1rem;
+.title {
+   font-size: 1.5rem;
+   font-weight: 800;
+   margin-bottom: 20px;
 }
 
 .button {
    display: flex;
    align-items: center;
-   margin-top: 0px;
+   margin-top: 50px;
 }
 
 .button__arrow {

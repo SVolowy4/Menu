@@ -33,7 +33,7 @@ p {
 .button {
    display: flex;
    align-items: center;
-   margin-top: 50px;
+   margin-top: 0px;
 }
 
 .button__arrow {
