@@ -1,0 +1,33 @@
+body {
+   font-family: Caveat;
+   background-color:blanchedalmond;
+}
+
+.title__copywrite {
+   font-size: 1.5rem;
+   font-weight: 800;
+}
+
+.main {
+   margin-top: 20px;
+}
+
+.copywrite {
+   display: flex;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.button__arrow {
+   width: 10%;
+}
+.button__arrow img {
+   width: 100%;
+}
+.button__name {
+   font-size: 2em;
+}

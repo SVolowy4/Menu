@@ -82,7 +82,7 @@
 
 <!--
 
-   * десерти (Торти 8, тістечка 8, цукерки)
+   * десерти (тістечка 8, цукерки)
 
    * Додати випічку (Хліб, круасани, крафіни, кекси)
  
@@ -292,26 +292,21 @@ p {
 <div class="main">
    <div class="main__container">
       <div class="image">
-         <img src="./pistachio-cake.png" alt="Pistachio cake">
+         <img src="./Картинка" alt="Картинка">
       </div>
+      <div class="title">Назва</div>
       <div class="copywrite">
          <ul>
-            <h2>Фісташковий Завертайло</h2>
-            <li>Цукор</li>
-            <li>Білок</li>
-            <li>Фісташка</li>
-            <li>Вершкове масло</li>
-            <li>Згущенка</li>
-            <li>Фісташкове <a href="./pistachio-praline.html">праліне</a></li>
+            ІНГРІДІЕНТИ
          </ul>
-         <p>Варіація Київського торта, на яку ми заслуговуємо. Ніжний крем – фісташковий, <a href="./pistachio-praline.html">праліне</a> – фісташкове, хрустка <a href="./pistachio-merenga.html">меренга</a> – з карамелізованою фісташкою, і ще купа дробленої фісташки на останок.</p>
+         <p>ДОПОВНЕННЯ</p>
       </div>
    </div>
 </div>
 
    --CSS
 
-   * {
+* {
    font-family: Caveat;
 }
 
@@ -324,8 +319,14 @@ body {
    width: 100%;
    box-shadow: 1px 10px 10px black;
 }
+.title {
+   margin-top: -80px;
+   font-size: 1.5 rem;
+   font-weight: 800;
+}
 .copywrite {
-   margin-top: -60px;
+   margin-top: 40px;
+   padding: 20px;
 }
 
 a {
@@ -342,23 +343,6 @@ p {
    font-size: 1.1rem;
 }
 
-.button {
-   display: flex;
-   align-items: center;
-   margin-top: 50px;
-}
-
-.button__arrow {
-   width: 10%;
-}
-.button__arrow img {
-   width: 100%;
-}
-.button__name {
-   font-size: 2em;
-}
-
-
 -->
 
 <!--Кнопка "Назад"-->
@@ -368,13 +352,13 @@ p {
 
    ---HTML
 
-   <a href="Куди назад">
+   <a style="text-decoration: none; color: black;" href="./Куди назад">
       <div class="button">
          <div class="button__arrow">
-            <img src="Стрілка" alt="Назва цього елементу">
+            <img src="../стрілка" alt="arrow back">
          </div>
          <div class="button__name">
-            <p>Назад</p>
+            <p style="font-size: 1.5rem;">Назад</p>
          </div>
       </div>
    </a>
@@ -396,4 +380,5 @@ p {
 .button__name {
    font-size: 2em;
 }
+
 -->

@@ -12,7 +12,8 @@ body {
    box-shadow: 1px 10px 10px black;
 }
 .copywrite {
-   margin-top: 0px;
+   margin-top: -20px;
+   padding: 20px;
 }
 
 .copywrite-box {

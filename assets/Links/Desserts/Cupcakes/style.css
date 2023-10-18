@@ -17,18 +17,20 @@ p {
 }
 
 .main {
-   padding: 50px 0 0 0;
+   padding: 10px 0 0 0;
 
 }
 
 .main__container {
    display: flex;
    flex-wrap: wrap;
-   gap: 50px;
+   gap: 20px;
    justify-content: space-around;
 }
 
 .card__container {
+   text-align: center;
+   line-height: 20px;
    width: 125px;
    display: flex;
    flex-direction: column;
@@ -43,4 +45,20 @@ p {
 
 .card__image {
    border-radius: 50%;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.button__arrow {
+   width: 10%;
+}
+.button__arrow img {
+   width: 100%;
+}
+.button__name {
+   font-size: 2em;
 }
