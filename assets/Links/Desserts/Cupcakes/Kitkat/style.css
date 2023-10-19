@@ -1,0 +1,51 @@
+* {
+   font-family: Caveat;
+}
+
+body {
+   background-color:blanchedalmond;
+   max-width: 414px;
+   margin: 0 auto;
+}
+.image img{
+   width: 100%;
+   box-shadow: 1px 10px 10px black;
+}
+.title {
+   margin-top: 0px;
+   font-size: 1.5rem;
+   font-weight: 800;
+}
+.copywrite {
+   padding: 20px;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+   text-decoration: underline;
+}
+
+li {
+   font-size: 1.2rem;
+}
+
+p {
+   font-size: 1.1rem;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.button__arrow {
+   width: 10%;
+}
+.button__arrow img {
+   width: 100%;
+}
+.button__name {
+   font-size: 2em;
+}
