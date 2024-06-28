@@ -1,0 +1,32 @@
+@font-face {
+   font-family: 'open_sansitalic';
+   src: url('./fonts/opensans-italic-webfont.woff2') format('woff2'),
+        url('./fonts/opensans-italic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+body {
+   background-color: black;
+   background-image: url(./img/main.png);
+   background-size: 360px 740px;
+   background-repeat: no-repeat;
+   font-family: 'open_sansitalic';
+}
+
+#mainDisplay {
+   margin: 285px 0px 0px 112px;
+}
+
+.main-button {
+   font-family: 'open_sansitalic';
+   font-size: 13px;
+   height: 25px;
+   width: 125px;
+   background-color: black;
+   color: white;
+   border: 0;
+   border-radius: 50px;
+   margin-bottom: 40px;
+}
