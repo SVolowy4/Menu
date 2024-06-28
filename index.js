@@ -156,6 +156,10 @@ $body.style.backgroundSize = '400px 800px'
 				$totalToDeath.textContent = totalToDeath.toFixed(2) + ' грн'
 				$totalToDeath.style.color = 'white'
 
+$linkConDeath.addEventListener('click', e=>{
+  anchorToDeath.textContent = '✅Смерть русні'
+})
+
       
 //Створення лінки БАР/КАСА з результатом 
     const $linkConBar = document.createElement('div')
