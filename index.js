@@ -36,6 +36,7 @@ $mBtnTip.addEventListener('click', e => {
   $mainDisplay.innerHTML = ''
 	$mainDisplay.style.margin = '250px 0px 0px 120px'
   $body.style.backgroundImage = 'url(./img/form.png)'
+  $body.style.backgroundSize = '400px 800px'
 
   const $textCont = document.createElement('div')
   const $text = document.createElement('span')
@@ -90,7 +91,7 @@ $mBtnCon.addEventListener('click', e=>{
 $mainDisplay.innerHTML = ''
 $mainDisplay.style.margin = '200px 0px 0px 80px'
 $body.style.backgroundImage = 'url(./img/form.png)'
-
+$body.style.backgroundSize = '400px 800px'
 
   const $textCont = document.createElement('div')
   
