@@ -1,13 +1,11 @@
 let daysOfWeek = [
    680, 270, 270, 270, 330, 450, 680
 ]
-let date = new Date()
-let today = date.getDay()
-let time = date.getHours()
+  let date = new Date()
+  let today = date.getDay()
+  let time = date.getHours()
 
 const $body = document.getElementById('body')
-
-
 
 const $mainDisplay = document.getElementById('mainDisplay')
 
@@ -28,42 +26,45 @@ function creatBtn(bc, b) {
 }
 
 const $mBtnTip = creatBtn()
-$mBtnTip.textContent = 'На господинь'
-$mBtnTip.classList.add('main-button')
+  $mBtnTip.textContent = 'На господинь'
+  $mBtnTip.classList.add('main-button')
+
 //при натисненні кнопки "на господинь"
-$mBtnTip.addEventListener('click', e => {
+  $mBtnTip.addEventListener('click', e => {
   
   $mainDisplay.innerHTML = ''
-	$mainDisplay.style.margin = '250px 0px 0px 120px'
+	 $mainDisplay.style.margin = '250px 0px 0px 120px'
+
   $body.style.backgroundImage = 'url(./img/form.png)'
   $body.style.backgroundSize = '400px 800px'
 
   const $textCont = document.createElement('div')
   const $text = document.createElement('span')
-	  $text.textContent = 'К-ть фіців: '
-		$text.style.color = 'white'
-		$text.style. fontFamily = 'open_sansitalic'
+	   $text.textContent = 'К-ть фіців: '
+		  $text.style.color = 'white'
+		  $text.style.fontFamily = 'open_sansitalic'
 
   const $input = document.createElement('input')
-  $input.setAttribute('type', 'number')
-		$input.style.outline = 'none'
-		$input.style.width = '50px'
-		$input.style.border = 'none'
-		$input.style.borderBottom = '1px solid white'
-		$input.style.backgroundColor = 'black'
-		$input.style.color = 'white'
-		$input.style.textAlign = 'center'
-		$input.style.fontSize = '18px'
-		$input.style.fontFamily = 'open_sansitalic'
+    $input.setAttribute('type', 'number')
+		  $input.style.outline = 'none'
+		  $input.style.width = '50px'
+		  $input.style.border = 'none'
+		  $input.style.borderBottom = '1px solid white'
+		  $input.style.backgroundColor = 'black'
+		  $input.style.color = 'white'
+		  $input.style.textAlign = 'center'
+		  $input.style.fontSize = '18px'
+		  $input.style.fontFamily = 'open_sansitalic'
   
-  $textCont.append($text, $input)
-  $mainDisplay.append($textCont)
+    $textCont.append($text, $input)
+    $mainDisplay.append($textCont)
   
   $input.addEventListener('blur', e => {
   
-        let $total = document.createElement('p')
+  let $total = document.createElement('p')
   
-        const total = daysOfWeek[today] / $input.value
+  const total = 
+  daysOfWeek[today] / $input.value
         
         $total.textContent = total.toFixed(2) + ' грн'
 				$total.style.color = 'white' 
