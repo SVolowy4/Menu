@@ -157,7 +157,7 @@ $body.style.backgroundSize = '400px 800px'
 				$totalToDeath.style.color = 'white'
 
 $linkConDeath.addEventListener('click', e=>{
-  anchorToDeath.textContent = '✅Смерть русні'
+  $anchorToDeath.textContent = '✅Смерть русні'
 })
 
       
