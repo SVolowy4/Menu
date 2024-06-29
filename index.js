@@ -176,7 +176,7 @@ $linkConDeath.addEventListener('click', e=>{
 				$totalToBar.textContent = totalToBar.toFixed(2) + ' грн'
 				$totalToBar.style.color = 'white'
  
-$linkConBar('click', e=>{
+$linkConBar.addEventListener('click', e=>{
   $anchorToBar.textContent = '✅Бар/Каса'
 })
 
@@ -195,7 +195,7 @@ const $anchorToKitch = document.createElement('a')
 		$totalToKitch.textContent = totalToKitch.toFixed(2) + ' грн'
 		$totalToKitch.style.color = 'white'
 
-$linkConKitch('click', e=>{
+$linkConKitch.addEventListener('click', e=>{
   $anchorToKitch.textContent = '✅Кухня/Кондитери'
 })
 
@@ -218,7 +218,7 @@ const $totalToRun = document.createElement('span')
 $totalToRun.textContent = totalToRun.toFixed(2) + ' грн'
 $totalToRun.style.color = 'white'
 
-$itemConRun('click', e=>{
+$itemConRun.addEventListener('click', e=>{
   $itemToRun.textContent = '✅Ранеру'
 })
 
@@ -235,7 +235,7 @@ const $totalToHost = document.createElement('span')
 $totalToHost.textContent = totalToHost.toFixed(2) + ' грн'
 $totalToHost.style.color = 'white'
 
-$itemConHost('click', e=>{
+$itemConHost.addEventListener('click', e=>{
   $itemToHost.textContent = '✅Хостес'
 })
 
