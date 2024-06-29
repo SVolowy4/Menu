@@ -175,6 +175,10 @@ $linkConDeath.addEventListener('click', e=>{
       const $totalToBar = document.createElement('span')
 				$totalToBar.textContent = totalToBar.toFixed(2) + ' грн'
 				$totalToBar.style.color = 'white'
+ 
+$linkConBar('click', e=>{
+  $anchorToBar.textContent = '✅Бар/Каса'
+})
 
 //Створення лінки КУХНЯ/КОНДИТЕРИ з результатом 
 const $linkConKitch = document.createElement('div')
@@ -190,6 +194,10 @@ const $anchorToKitch = document.createElement('a')
   const $totalToKitch = document.createElement('span')
 		$totalToKitch.textContent = totalToKitch.toFixed(2) + ' грн'
 		$totalToKitch.style.color = 'white'
+
+$linkConKitch('click', e=>{
+  $anchorToKitch.textContent = '✅Кухня/Кондитери'
+})
 
   
 //Створення лінки РАНЕРУ з результатом 
@@ -210,6 +218,10 @@ const $totalToRun = document.createElement('span')
 $totalToRun.textContent = totalToRun.toFixed(2) + ' грн'
 $totalToRun.style.color = 'white'
 
+$itemConRun('click', e=>{
+  $itemToRun = '✅Ранеру'
+})
+
 //Створення лінки Хостес з результатом 
 const $itemConHost = document.createElement('div')
 $itemConHost.style.display = 'flex'
@@ -222,6 +234,10 @@ $itemToHost.style.color = 'white'
 const $totalToHost = document.createElement('span')
 $totalToHost.textContent = totalToHost.toFixed(2) + ' грн'
 $totalToHost.style.color = 'white'
+
+$itemConHost('click', e=>{
+  $itemToHost = '✅Хостес'
+})
 
 $toggleCon.style.display = 'none'
 
