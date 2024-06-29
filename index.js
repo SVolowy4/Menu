@@ -219,7 +219,7 @@ $totalToRun.textContent = totalToRun.toFixed(2) + ' грн'
 $totalToRun.style.color = 'white'
 
 $itemConRun('click', e=>{
-  $itemToRun = '✅Ранеру'
+  $itemToRun.textContent = '✅Ранеру'
 })
 
 //Створення лінки Хостес з результатом 
@@ -236,7 +236,7 @@ $totalToHost.textContent = totalToHost.toFixed(2) + ' грн'
 $totalToHost.style.color = 'white'
 
 $itemConHost('click', e=>{
-  $itemToHost = '✅Хостес'
+  $itemToHost.textContent = '✅Хостес'
 })
 
 $toggleCon.style.display = 'none'
