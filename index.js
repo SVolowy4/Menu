@@ -98,6 +98,7 @@ $body.style.backgroundImage = 'url(./img/form.png)'
 	$text.style.color = 'white'
 
   const $input = document.createElement('input')
+  $input.style.outline = 'none'
   $input.style.width = '100px'
   $input.style.border = 'none'
   $input.style.borderBottom = '1px solid white'
