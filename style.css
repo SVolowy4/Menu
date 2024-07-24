@@ -15,7 +15,7 @@ body {
 .main__container {
    margin: 0 auto;
    height: 740px;
-   width: 360px;
+   width: 370px;
    border: 1px solid black;
    background-image: url(./img/main.png);
    background-repeat: no-repeat;
