@@ -9,14 +9,21 @@
 
 body {
    background-color: black;
-   background-image: url(./img/main.png);
-   background-size: 400px 800px;
-   background-repeat: no-repeat;
    font-family: 'open_sansitalic';
 }
 
+.main__container {
+   margin: 0 auto;
+   height: 740px;
+   width: 360px;
+   border: 1px solid white;
+   background-image: url(./img/main.png);
+   background-repeat: no-repeat;
+   background-size: 360px 740px;
+}
+
 #mainDisplay {
-   margin: 313px 0px 0px 133px;
+   margin: 285px 0px 0px 120px;
 }
 
 .main-button {
@@ -30,3 +37,4 @@ body {
    border-radius: 50px;
    margin-bottom: 40px;
 }
+
