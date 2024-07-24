@@ -1,11 +1,13 @@
 let daysOfWeek = [
-   680, 270, 270, 270, 330, 450, 680
+   560, 270, 270, 270, 300, 350, 560
 ]
-  let date = new Date()
-  let today = date.getDay()
-  let time = date.getHours()
+let date = new Date()
+let today = date.getDay()
+let time = date.getHours()
 
 const $body = document.getElementById('body')
+
+
 
 const $mainDisplay = document.getElementById('mainDisplay')
 
@@ -26,50 +28,46 @@ function creatBtn(bc, b) {
 }
 
 const $mBtnTip = creatBtn()
-  $mBtnTip.textContent = 'На господинь'
-  $mBtnTip.classList.add('main-button')
-
+$mBtnTip.textContent = 'На господинь'
+$mBtnTip.classList.add('main-button')
 //при натисненні кнопки "на господинь"
-  $mBtnTip.addEventListener('click', e => {
+$mBtnTip.addEventListener('click', e => {
   
   $mainDisplay.innerHTML = ''
-	 $mainDisplay.style.margin = '250px 0px 0px 120px'
-
-  $body.style.backgroundImage = 'url(./img/form.png)'
-  $body.style.backgroundSize = '400px 800px'
+	$mainDisplay.style.margin = '150px 0px 0px 80px'
+  $body.style.backgroundImage = 'url(/img/gospodun.png)'
 
   const $textCont = document.createElement('div')
   const $text = document.createElement('span')
-	   $text.textContent = 'К-ть фіців: '
-		  $text.style.color = 'white'
-		  $text.style.fontFamily = 'open_sansitalic'
+	  $text.textContent = 'К-ть фіців: '
+		$text.style.color = 'black'
+		$text.style. fontFamily = 'open_sansitalic'
 
   const $input = document.createElement('input')
-    $input.setAttribute('type', 'number')
-		  $input.style.outline = 'none'
-		  $input.style.width = '50px'
-		  $input.style.border = 'none'
-		  $input.style.borderBottom = '1px solid white'
-		  $input.style.backgroundColor = 'black'
-		  $input.style.color = 'white'
-		  $input.style.textAlign = 'center'
-		  $input.style.fontSize = '18px'
-		  $input.style.fontFamily = 'open_sansitalic'
+		$input.style.outline = 'none'
+		$input.style.width = '50px'
+		$input.style.border = 'none'
+		$input.style.borderBottom = '1px solid black'
+		$input.style.backgroundColor = 'white'
+		$input.style.color = 'black'
+		$input.style.textAlign = 'center'
+		$input.style.fontSize = '18px'
+		$input.style.fontFamily = 'open_sansitalic'
   
-    $textCont.append($text, $input)
-    $mainDisplay.append($textCont)
+  $textCont.append($text, $input)
+  $mainDisplay.append($textCont)
   
   $input.addEventListener('blur', e => {
   
-  let $total = document.createElement('p')
+        let $total = document.createElement('p')
   
-  const total = 
-  daysOfWeek[today] / $input.value
+        const total = daysOfWeek[today] / $input.value
         
         $total.textContent = total.toFixed(2) + ' грн'
-				$total.style.color = 'white' 
+				$total.style.color = 'black' 
 				$total.style.fontSize = '20px' 
-				$total.style.fontSize = '20px' 
+				$total.style.fontSize = '20px'
+        $total.style.paddingLeft = '50px' 
         $mainDisplay.append($total)
         $input.blur()
         
@@ -93,7 +91,7 @@ $mBtnCon.addEventListener('click', e=>{
 $mainDisplay.innerHTML = ''
 $mainDisplay.style.margin = '200px 0px 0px 80px'
 $body.style.backgroundImage = 'url(./img/form.png)'
-$body.style.backgroundSize = '400px 800px'
+
 
   const $textCont = document.createElement('div')
   
@@ -102,8 +100,6 @@ $body.style.backgroundSize = '400px 800px'
 	$text.style.color = 'white'
 
   const $input = document.createElement('input')
-  $input.setAttribute('type', 'number')
-  $input.style.outline = 'none'
   $input.style.width = '100px'
   $input.style.border = 'none'
   $input.style.borderBottom = '1px solid white'
@@ -129,7 +125,7 @@ $body.style.backgroundSize = '400px 800px'
     const totalToHost = $input.value * (0.05 /100)
 
 		const sumReg = totalToDeath + totalToBar + totalToKitch
-		const sumOff = totalToDeath + totalToBar + totalToKitch + totalToRun + totalToHost
+		const sumOff = sumReg + totalToRun + totalToHost
 		
     
     
@@ -156,10 +152,6 @@ $body.style.backgroundSize = '400px 800px'
 				$totalToDeath.textContent = totalToDeath.toFixed(2) + ' грн'
 				$totalToDeath.style.color = 'white'
 
-$linkConDeath.addEventListener('click', e=>{
-  $anchorToDeath.textContent = '✅Смерть русні'
-})
-
       
 //Створення лінки БАР/КАСА з результатом 
     const $linkConBar = document.createElement('div')
@@ -175,10 +167,6 @@ $linkConDeath.addEventListener('click', e=>{
       const $totalToBar = document.createElement('span')
 				$totalToBar.textContent = totalToBar.toFixed(2) + ' грн'
 				$totalToBar.style.color = 'white'
- 
-$linkConBar.addEventListener('click', e=>{
-  $anchorToBar.textContent = '✅Бар/Каса'
-})
 
 //Створення лінки КУХНЯ/КОНДИТЕРИ з результатом 
 const $linkConKitch = document.createElement('div')
@@ -194,10 +182,6 @@ const $anchorToKitch = document.createElement('a')
   const $totalToKitch = document.createElement('span')
 		$totalToKitch.textContent = totalToKitch.toFixed(2) + ' грн'
 		$totalToKitch.style.color = 'white'
-
-$linkConKitch.addEventListener('click', e=>{
-  $anchorToKitch.textContent = '✅Кухня/Кондитери'
-})
 
   
 //Створення лінки РАНЕРУ з результатом 
@@ -218,10 +202,6 @@ const $totalToRun = document.createElement('span')
 $totalToRun.textContent = totalToRun.toFixed(2) + ' грн'
 $totalToRun.style.color = 'white'
 
-$itemConRun.addEventListener('click', e=>{
-  $itemToRun.textContent = '✅Ранеру'
-})
-
 //Створення лінки Хостес з результатом 
 const $itemConHost = document.createElement('div')
 $itemConHost.style.display = 'flex'
@@ -235,14 +215,11 @@ const $totalToHost = document.createElement('span')
 $totalToHost.textContent = totalToHost.toFixed(2) + ' грн'
 $totalToHost.style.color = 'white'
 
-$itemConHost.addEventListener('click', e=>{
-  $itemToHost.textContent = '✅Хостес'
-})
-
 $toggleCon.style.display = 'none'
 
 const $toggleBtnReg = document.createElement('button')
-	$toggleBtnReg.textContent = 'Без Хостес/Ранера'
+	$toggleBtnReg.textContent = '↓ Без Хостес/Ранера ↓'
+  $toggleBtnReg.style.padding = '5px'
 	$toggleBtnReg.style.marginTop = '10px'
 	$toggleBtnReg.style.fontFamily = 'open_sansitalic'
 	$toggleBtnReg.style.backgroundColor = 'black'
@@ -250,7 +227,8 @@ const $toggleBtnReg = document.createElement('button')
 	$toggleBtnReg.style.border = '1px solid white'
 
 const $toggleBtnOff = document.createElement('button')
-	$toggleBtnOff.textContent = 'Із Хостес/Ранером'
+	$toggleBtnOff.textContent = '↑ Із Хостес/Ранером ↑'
+  $toggleBtnOff.style.padding = '5px'
 	$toggleBtnOff.style.display = 'none'
 	$toggleBtnOff.style.marginTop = '10px'
 	$toggleBtnOff.style.fontFamily = 'open_sansitalic'
@@ -261,12 +239,12 @@ const $toggleBtnOff = document.createElement('button')
 
 
 const $sumReg = document.createElement('p')
-$sumReg.textContent = sumReg.toFixed(2) + ' грн'
+$sumReg.textContent = `Всього: ${sumReg.toFixed(2)} грн`
 $sumReg.style.color = 'white'
 
 
 const $sumOff = document.createElement('p')
-$sumOff.textContent = sumOff.toFixed(2) + ' грн'
+$sumOff.textContent = `Всього: ${sumOff.toFixed(2)} грн`
 $sumOff.style.color = 'white'
 $sumOff.style.display = 'none'
 
