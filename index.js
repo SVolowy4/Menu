@@ -7,8 +7,6 @@ let time = date.getHours()
 
 const $body = document.getElementById('body')
 
-
-
 const $mainDisplay = document.getElementById('mainDisplay')
 
 //створення головних кнопок
