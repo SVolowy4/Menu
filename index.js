@@ -42,6 +42,7 @@ $mBtnTip.addEventListener('click', e => {
 		$text.style. fontFamily = 'open_sansitalic'
 
   const $input = document.createElement('input')
+    $input.setAttribute('type', 'number')
 		$input.style.outline = 'none'
 		$input.style.width = '50px'
 		$input.style.border = 'none'
@@ -98,6 +99,7 @@ $body.style.backgroundImage = 'url(./img/form.png)'
 	$text.style.color = 'white'
 
   const $input = document.createElement('input')
+  $input.setAttribute('type', 'number')
   $input.style.outline = 'none'
   $input.style.width = '100px'
   $input.style.border = 'none'
