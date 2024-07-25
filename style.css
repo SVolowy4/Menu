@@ -8,7 +8,7 @@
 }
 
 body {
-   background-color: black;
+   background-color: white;
    font-family: 'open_sansitalic';
 }
 
@@ -17,6 +17,7 @@ body {
    height: 740px;
    width: 370px;
    border: 1px solid black;
+   border-radius: 10px;
    background-image: url(./img/main.png);
    background-repeat: no-repeat;
    background-size: 360px 740px;
