@@ -16,7 +16,7 @@ body {
 
 .main__container {
 
-  margin: 20px auto;
+  margin: 30px auto;
   height: 740px;
   width: 340px;
   background-color: black;
@@ -25,7 +25,7 @@ body {
   background-size: 360px 740px;
   border: 1px solid black;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px 10px black;
+  box-shadow: 1px 1px 20px 20px black;
 
 }
 
