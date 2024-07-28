@@ -8,13 +8,24 @@
 }
 
 body {
+   
    background-color: black;
    font-family: 'open_sansitalic';
-   background-image: url(./img/main.png);
-   background-repeat: no-repeat;
-   background-size: 360px 740px;
+   
 }
 
+.main__container {
+
+  margin: 0 auto;
+  height: 740px;
+  weight: 340px;
+  background-image: url(./img/main.png);
+  background-repeat: no-repeat;
+  background-size: 360px 740px;
+  border: 1px solid white;
+  border-radius: 10px;
+
+}
 
 
 #mainDisplay {
