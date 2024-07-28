@@ -34,6 +34,7 @@ $mBtnTip.addEventListener('click', e => {
   $mainDisplay.innerHTML = ''
 	$mainDisplay.style.margin = '150px 0px 0px 80px'
   $body.style.backgroundImage = 'url(./img/gospudin.png)'
+  $body.style.boxShadow = '1px 1px 5px 5px black'
 
   const $textCont = document.createElement('div')
   const $text = document.createElement('span')
