@@ -23,7 +23,7 @@ body {
   background-image: url(./img/main.png);
   background-repeat: no-repeat;
   background-size: 360px 740px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 10px;
   box-shadow: 1px 1px 5px 5px black;
 
