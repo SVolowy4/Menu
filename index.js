@@ -9,6 +9,11 @@ const $body = document.getElementById('body')
 
 const $mainDisplay = document.getElementById('mainDisplay')
 
+window.onload = function() {
+  document.getElementById('preloader').style.display = 'none';
+}
+
+
 //створення головних кнопок
 function creatBtn(bc, b) {
   
